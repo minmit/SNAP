@@ -1,1 +1,9 @@
-# SNAP
+# SNAP - Stateful Network-Wide Abstractions for Packet Processing
+
+This repository contains the python prototype of the SNAP language and compiler. Here is a short introduction on SNAP:
+ 
+Early programming languages for software-defined net- working (SDN) were built on top of the simple match- action paradigm offered by OpenFlow 1.0. However, emerging hardware and software switches offer much more sophisticated support for persistent state in the data plane, without involving a central controller. Nevertheless, managing stateful, distributed systems efficiently and correctly is known to be one of the most challenging programming problems. To simplify this new SDN problem, we developed SNAP.
+
+SNAP offers a simpler “centralized” stateful programming model, by allowing programmers to develop programs on top of one big switch rather than many. These programs may contain reads and writes to global, persistent arrays, and as a result, programmers can implement a broad range of applications, from stateful firewalls to fine-grained traffic monitoring. The SNAP compiler relieves programmers of having to worry about how to distribute, place, and optimize access to these stateful arrays by doing it all for them. More specifically, the compiler discovers read/write dependencies between arrays and translates one-big-switch programs into an efficient internal representation based on a novel variant of binary decision diagrams. This internal representation is used to construct a mixed-integer linear program, which jointly optimizes the placement of state and the routing of traffic across the underlying physical topology. 
+
+This repository contains the prototype compiler that we have developed. We applied this compiler to about 20 SNAP programs over various topologies to demonstrate our techniques’ scalability. For more information, please see our [paper](http://dl.acm.org/citation.cfm?id=2934892) at SIGCOMM 2016.
