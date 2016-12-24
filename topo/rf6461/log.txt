@@ -1,0 +1,100 @@
+network links 744
+switches 138
+demands 9216
+edges 936
+st-dep 0.00096607208252
+fdd-trans 0.846666097641
+st-req 0.00871109962463
+191
+936
+96 96
+st_req 191
+0
+1 32.9794440269
+2 9.80829405785
+3 48.8782169819
+4 15.3502891064
+5 0.000626802444458
+6 1.61185693741
+7 7.38487410545
+8 2.30258393288
+9 1.08547282219
+10 9.53674316406e-07
+mip creation 119.692254066
+Optimize a model with 2531454 rows, 7016544 columns and 22262524 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 7e+05]
+  Objective range [1e-07, 3e-01]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+07]
+Presolve removed 877042 rows and 18525 columns (presolve time = 11s) ...
+Presolve removed 962318 rows and 190563 columns (presolve time = 15s) ...
+Presolve removed 967452 rows and 192035 columns (presolve time = 20s) ...
+Presolve removed 993406 rows and 192216 columns (presolve time = 28s) ...
+Presolve removed 994270 rows and 193926 columns (presolve time = 30s) ...
+Presolve removed 995980 rows and 193926 columns (presolve time = 36s) ...
+Presolve removed 995980 rows and 193926 columns (presolve time = 40s) ...
+Presolve removed 995980 rows and 193926 columns
+Presolve time: 43.03s
+Presolved: 1535474 rows, 6822618 columns, 21478399 nonzeros
+Variable types: 6822342 continuous, 276 integer (276 binary)
+Optimize a model with 1535474 rows, 6822618 columns and 21478399 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 7e+05]
+  Objective range [1e-07, 3e-01]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+07]
+
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Presolve removed 0 rows and 0 columns (presolve time = 9s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 12s) ...
+Presolve removed 9120 rows and 0 columns (presolve time = 16s) ...
+Presolve removed 9120 rows and 0 columns
+Presolved: 1526354 rows, 6822618 columns, 21405443 nonzeros
+
+Root barrier log...
+
+Ordering time: 2.44s
+
+Barrier statistics:
+ Dense cols : 275
+ AA' NZ     : 1.965e+07
+ Factor NZ  : 2.762e+08 (roughly 6.0 GBytes of memory)
+ Factor Ops : 1.567e+11 (roughly 6 seconds per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   3.22681202e+05 -2.02366316e+06  3.89e+03 5.55e-17  8.67e+00   104s
+
+Barrier performed 0 iterations in 108.54 seconds
+Time limit reached
+
+Concurrent spin time: 2.87s
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.3312661e+02   0.000000e+00   0.000000e+00    110s
+
+Solved with dual simplex
+Solved in 225159 iterations and 109.90 seconds
+Optimal objective  2.331266052e+02
+
+Root relaxation: objective 2.331266e+02, 225159 iterations, 50.86 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0     233.1266052  233.12661  0.00%     -  110s
+
+Explored 0 nodes (225159 simplex iterations) in 116.30 seconds
+Thread count was 4 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.331266051833e+02, best bound 2.331266051833e+02, gap 0.0%
+mip solving 119.04775095
+{'orphan': '78', 'blacklist': '78', 'susp': '78'}
+rule gen 0.110584974289

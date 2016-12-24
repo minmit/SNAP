@@ -1,0 +1,65 @@
+edges 302
+st-dep 0.00137591362
+fdd-trans 1.0800139904
+st-req 0.0168199539185
+('p141', 'p141')
+281
+('p141', 'p9')
+302
+141 141
+st_req 281
+0
+1 7.10186505318
+2 1.51872086525
+3 31.8362429142
+4 2.28855109215
+5 0.000101804733276
+6 0.133249998093
+7 0.28940486908
+8 0.203174114227
+9 0.0932459831238
+10 9.53674316406e-07
+mip creation 43.5166459084
+Optimize a model with 3032005 rows, 443553 columns and 1397933 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 5e+00]
+  Objective range [4e-05, 1e-01]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [4e-02, 1e+03]
+Presolve removed 2785582 rows and 234500 columns
+Presolve time: 0.82s
+
+Explored 0 nodes (0 simplex iterations) in 2.03 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0  3032005         0   887106         0s
+
+IIS computed: 3789 constraints, 19740 bounds
+IIS runtime: 1.01 seconds
+mip solving 4.78548383713
+Traceback (most recent call last):
+  File "eval_enterprise.py", line 152, in <module>
+    optimize(timelimit)
+  File "eval_enterprise.py", line 79, in optimize
+    ilp = compile_from_req(graph, traffic_req, st_req, states, dep, tied, timelimit)
+  File "/home/mina/pyretic/pyretic/lib/stateful/stateful.py", line 137, in compile_from_req
+    R = dict([(ind, R[ind].x) for ind in R])
+  File "var.pxi", line 71, in gurobipy.Var.__getattr__ (../../src/python/gurobipy.c:10976)
+  File "var.pxi", line 138, in gurobipy.Var.getAttr (../../src/python/gurobipy.c:11850)
+gurobipy.GurobiError: Unable to retrieve attribute 'x'
+Traceback (most recent call last):
+  File "eval_enterprise.py", line 154, in <module>
+    gen_rule()
+  File "eval_enterprise.py", line 86, in gen_rule
+    rule_gen(topo, ilp, dep, pol_fdd)
+  File "/home/mina/pyretic/pyretic/lib/stateful/stateful.py", line 147, in rule_gen
+    routing_rules = get_routing_table(p_sw[0], port_map[p_sw[0]], R)
+KeyError: '667'

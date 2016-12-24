@@ -1,0 +1,75 @@
+edges 466
+st-dep 0.00174689292908
+fdd-trans 1.44659280777
+st-req 0.0188119411469
+('p185', 'p185')
+369
+('p154', 'p185')
+466
+185 185
+st_req 369
+0
+1 33.0945518017
+2 8.22583699226
+3 87.4183440208
+4 13.6062881947
+5 0.00020694732666
+6 0.515757799149
+7 2.39316511154
+8 0.69189786911
+9 0.333033084869
+10 9.53674316406e-07
+mip creation 146.53123188
+Optimize a model with 7267917 rows, 3390091 columns and 10498195 nonzeros
+Coefficient statistics:
+  Matrix range    [2e-01, 5e+00]
+  Objective range [3e-05, 1e-01]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [2e-01, 1e+04]
+Found heuristic solution: objective 372.542
+Presolve removed 6300346 rows and 68632 columns (presolve time = 5s) ...
+Presolve removed 6376722 rows and 294458 columns (presolve time = 13s) ...
+Presolve removed 6376722 rows and 294458 columns (presolve time = 15s) ...
+Presolve removed 6376722 rows and 294458 columns (presolve time = 20s) ...
+Presolve removed 6376722 rows and 294458 columns
+Presolve time: 20.02s
+Presolved: 891195 rows, 3095633 columns, 6915246 nonzeros
+Variable types: 3095583 continuous, 50 integer (50 binary)
+Optimize a model with 891195 rows, 3095633 columns and 6915246 nonzeros
+Coefficient statistics:
+  Matrix range    [2e-01, 5e+00]
+  Objective range [3e-05, 5e-04]
+  Bounds range    [1e+00, 2e+00]
+  RHS range       [2e-01, 1e+04]
+
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Presolve removed 0 rows and 0 columns (presolve time = 5s) ...
+Presolve removed 34040 rows and 0 columns
+Concurrent spin time: 2.19s (can be avoided by choosing Method=3)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.7197980e+02   0.000000e+00   0.000000e+00     32s
+
+Solved with dual simplex
+Solved in 2246 iterations and 31.88 seconds
+Optimal objective  3.719798000e+02
+
+Root relaxation: objective 3.719798e+02, 2246 iterations, 9.28 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0     371.9798000  371.97980  0.00%     -   32s
+
+Explored 0 nodes (2246 simplex iterations) in 32.20 seconds
+Thread count was 4 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.719798000000e+02, best bound 3.719797999993e+02, gap 0.0000%
+mip solving 38.2837998867
+{'orphan': '2', 'susp': '2', 'blacklist': '2'}
+rule gen 0.0839328765869
